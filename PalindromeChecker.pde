@@ -14,16 +14,11 @@ public void setup()
     }
   }
 }
-public boolean palindrome(String word)
+public boolean palindrome(String sWord)
 {
-  //your code here
-  return false;
+	return sWord.equals(new StringBuilder(sWord.substring(0, sWord.length())).reverse().toString());
 }
 public String reverse(String str)
 {
-    String sNew = new String();
-    //your code here
-    return sNew;
+	return new StringBuilder(str).reverse().toString();
 }
-
-

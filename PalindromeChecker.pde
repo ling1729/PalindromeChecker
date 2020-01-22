@@ -16,7 +16,7 @@ public void setup()
 }
 public boolean palindrome(String sWord)
 {
-	return sWord.equals(new StringBuilder(sWord.substring(0, sWord.length())).reverse().toString());
+	return sWord.toLowerCase().replaceAll("[^A-Za-z0-9]","").equals(new StringBuilder(sWord.toLowerCase().replaceAll("[^A-Za-z0-9]","").substring(0, sWord.toLowerCase().replaceAll("[^A-Za-z0-9]","").length())).reverse().toString());
 }
 public String reverse(String str)
 {
